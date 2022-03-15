@@ -3,7 +3,7 @@
 
 #include "../utility/Solid.h"
 
-class Sphere : Solid {
+class Sphere : public Solid {
 private:
 	Vec3 center;
 	double r;
