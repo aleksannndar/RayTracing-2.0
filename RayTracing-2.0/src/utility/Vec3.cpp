@@ -80,7 +80,7 @@ double Vec3::lengthSquared() const {
 	return x * x + y * y + z * z;
 }
 
-std::ostream& operator<<(std::ostream& out, const Vec3& v) {
+std::ostream& operator<<(std::ostream& out, Vec3& v) {
 	return out << v.getX() << " " << v.getY() << " " << v.getZ();
 }
 
@@ -120,4 +120,8 @@ Vec3 cross(const Vec3& v, const Vec3& u) {
 	return Vec3(v.getY()*u.getZ() - v.getZ()*u.getY(), 
 				v.getZ()*u.getX() - v.getX()*u.getZ(), 
 				v.getX()*u.getY() - v.getY()*u.getX());
+}
+
+Vec3 unitVector(const Vec3& v) {
+	return v / v.lengthSquared();
 }

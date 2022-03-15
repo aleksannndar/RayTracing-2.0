@@ -39,7 +39,7 @@ public:
 
 };
 
-std::ostream& operator<<(std::ostream& out, const Vec3& v);
+std::ostream& operator<<(std::ostream& out, Vec3& v);
 
 Vec3 operator+(const Vec3& v, const Vec3& u);
 
@@ -58,5 +58,8 @@ Vec3 operator/(const Vec3& v, double t);
 double dot(const Vec3& v, const Vec3& u);
 
 Vec3 cross(const Vec3& v, const Vec3& u);
+
+Vec3 unitVector(const Vec3& v);
+
 
 #endif 
