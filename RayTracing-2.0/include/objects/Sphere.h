@@ -9,6 +9,7 @@ private:
 	double r;
 	double rSqr;
 public:
+	Sphere() {};
 	Sphere(const Vec3& origin, double r);
 
 	std::shared_ptr<Hit> firstHit(const Ray& r, double afterTime) const override;

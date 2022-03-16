@@ -1,4 +1,5 @@
 #include "../../include/objects/Sphere.h"
+#include "../../include/objects/HitSphere.h"
 
 Sphere::Sphere(const Vec3& center, double r) {
 	this->center = center;
@@ -15,8 +16,8 @@ std::shared_ptr<Hit> Sphere::firstHit(const Ray& r, double afterTime) const {
 
 	if (mSqr > 0) {
 		double m = std::sqrt(mSqr);
-		if (l - m > afterTime) return std::make_shared<HitData>(l - m, r.at(l - m) - center);
-		if (l + m > afterTime) return std::make_shared<HitData>(l + m, r.at(l + m) - center);
+		if (l - m > afterTime) return std::make_shared<HitSphere>(r, l - m, *this);
+		if (l + m > afterTime) return std::make_shared<HitSphere>(r, l + m, *this);
 	}
 
 	return nullptr;

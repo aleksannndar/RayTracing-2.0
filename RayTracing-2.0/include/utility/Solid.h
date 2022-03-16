@@ -2,7 +2,7 @@
 #define SOLID_H
 
 #include "Ray.h"
-#include "HitData.h"
+#include "../objects/Hit.h"
 #include <memory>
 
 class Solid {
