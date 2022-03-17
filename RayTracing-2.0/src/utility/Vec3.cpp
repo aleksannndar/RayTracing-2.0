@@ -2,16 +2,14 @@
 
 #include<cmath>
 
-Vec3::Vec3() {
-	x = 0.0;
-	y = 0.0;
-	z = 0.0;
-}
-
 Vec3::Vec3(double x, double y, double z) {
 	this->x = x;
 	this->y = y;
 	this->z = z;
+}
+
+Vec3::Vec3() {
+	Vec3(0.0, 0.0, 0.0);
 }
 
 double Vec3::getX() const {
@@ -124,4 +122,13 @@ Vec3 cross(const Vec3& v, const Vec3& u) {
 
 Vec3 unitVector(const Vec3& v) {
 	return v / v.lengthSquared();
+}
+
+Vec3 normal(const Vec3& v) {
+	if (v.getX() != 0 || v.getY() != 0) {
+		return Vec3(-v.getY(), v.getX(), 0.0);
+	}
+	else {
+		return Vec3(1.0, 0.0, 0.0);
+	}
 }

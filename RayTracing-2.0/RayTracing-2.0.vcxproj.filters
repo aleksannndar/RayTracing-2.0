@@ -42,6 +42,9 @@
     <ClCompile Include="src\objects\HitSphere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\objects\HalfSpace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\utility\Vec3.h">
@@ -75,6 +78,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\objects\HitSphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\objects\HalfSpace.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

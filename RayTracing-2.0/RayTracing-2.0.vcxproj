@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="src\objects\HalfSpace.cpp" />
     <ClCompile Include="src\objects\HitSphere.cpp" />
     <ClCompile Include="src\objects\Sphere.cpp" />
     <ClCompile Include="src\utility\Camera.cpp" />
@@ -158,6 +159,7 @@
     <ClCompile Include="src\utility\Vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\objects\HalfSpace.h" />
     <ClInclude Include="include\objects\HitSphere.h" />
     <ClInclude Include="include\objects\Sphere.h" />
     <ClInclude Include="include\utility\Body.h" />

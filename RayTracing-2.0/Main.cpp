@@ -1,5 +1,6 @@
 //THIS IS MAIN SRC FILE FOR RUNNING PROGRAM
 
+#include "include/utility/Vec3.h"
 #include<iostream>
 #include "include/utility/MainHeader.h"
 #include "include/utility/Color.h"
