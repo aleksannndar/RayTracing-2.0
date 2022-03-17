@@ -1,5 +1,5 @@
 #include "../../include/objects/Sphere.h"
-#include "../../include/objects/HitSphere.h"
+#include "../../include/objects/hits/HitSphere.h"
 
 Sphere::Sphere(const Vec3& center, double r) {
 	this->center = center;

@@ -1,4 +1,4 @@
-#include "../../include/objects/HitSphere.h"
+#include "../../../include/objects/hits/HitSphere.h"
 
 HitSphere::HitSphere(const Ray& ray, double t, const Sphere& sphere) {
 	this->ray = ray;

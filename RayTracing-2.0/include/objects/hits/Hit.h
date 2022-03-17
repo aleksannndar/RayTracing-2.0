@@ -1,7 +1,7 @@
 #ifndef HIT_H
 #define HIT_H
 
-#include "../utility/MainHeader.h"
+#include "../../utility/MainHeader.h"
 
 
 class Hit {

@@ -3,7 +3,6 @@
 
 #include "MainHeader.h"
 #include "Solid.h"
-#include "../objects/Hit.h"
 #include <memory>
 
 class Body {

@@ -39,10 +39,13 @@
     <ClCompile Include="src\objects\Sphere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\objects\HitSphere.cpp">
+    <ClCompile Include="src\objects\hits\HitSphere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\objects\HalfSpace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\hits\HitHalfSpace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,7 +65,7 @@
     <ClInclude Include="include\utility\Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\objects\Hit.h">
+    <ClInclude Include="include\objects\hits\Hit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\utility\Solid.h">
@@ -77,10 +80,13 @@
     <ClInclude Include="include\objects\Sphere.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\objects\HitSphere.h">
+    <ClInclude Include="include\objects\hits\HitSphere.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\objects\HalfSpace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\objects\hits\HitHalfSpace.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

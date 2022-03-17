@@ -2,7 +2,7 @@
 #define HIT_SPHERE_H
 
 #include "Hit.h"
-#include "Sphere.h"
+#include "../Sphere.h"
 
 class HitSphere : public Hit {
 private:
