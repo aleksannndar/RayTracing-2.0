@@ -12,7 +12,7 @@ public:
 	Sphere() {};
 	Sphere(const Vec3& origin, double r);
 
-	std::shared_ptr<Hit> firstHit(const Ray& r, double afterTime) const override;
+	std::shared_ptr<Hit> firstHit(const Ray& ray, double afterTime) const override;
 
 	Vec3 getCenter() const;
 

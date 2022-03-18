@@ -1,3 +1,12 @@
 ﻿  Main.cpp
-E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\Main.cpp(38,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\Main.cpp(40,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  HalfSpace.cpp
+  HitHalfSpace.cpp
+  HitSphere.cpp
+  Sphere.cpp
+  Camera.cpp
+  Color.cpp
+  MainHeader.cpp
+  Uniform.cpp
+  Generating Code...
   RayTracing-2.0.vcxproj -> E:\Programiranje\C++Practice\RayTracing-2.0\bin\x64\Debug\RayTracing-2.0.exe

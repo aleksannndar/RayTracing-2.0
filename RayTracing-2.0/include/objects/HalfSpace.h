@@ -31,7 +31,7 @@ public:
 
 	Vec3 getN_() const;
 
-	std::shared_ptr<Hit> firstHit(const Ray& r, double afterTime) const override;
+	std::shared_ptr<Hit> firstHit(const Ray& ray, double afterTime) const override;
 };
 
 #endif

@@ -3,7 +3,7 @@
 
 #include "MainHeader.h"
 
-void writeColor(const Vec3& color);
+void writeColor(const Vec3& color, int samplesPerPixel);
 
 #endif
 

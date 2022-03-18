@@ -18,14 +18,10 @@ HalfSpace::HalfSpace(const Vec3& p, const Vec3& e, const Vec3& f) {
 }
 
 HalfSpace::HalfSpace(const Vec3& p, const Vec3& n) {
-	this->p = p;
-	this->n = n;
-
 	double nl = n.length();
-	e = normal(n) / nl;
-	f = cross(e, n) / nl;
-
-	HalfSpace(p, e ,f);
+	Vec3 e = normal(n) / nl;
+	Vec3 f = cross(n, e) / nl;
+	this->HalfSpace::HalfSpace(p, e, f);
 }
 
 Vec3 HalfSpace::getP() const {
@@ -48,16 +44,16 @@ Vec3 HalfSpace::getN_() const {
 	return n_;
 }
 
-std::shared_ptr<Hit> HalfSpace::firstHit(const Ray& r, double afterTime) const{
-	double o = dot(n, r.getDirection());
+std::shared_ptr<Hit> HalfSpace::firstHit(const Ray& ray, double afterTime) const{
+	double o = dot(n, ray.getDirection());
 
-	if (o <= 0) {
+	if (o == 0) {
 		return nullptr;
 	}
 	else {
-		double t = dot(n,p - r.getOrigin()) / o;
+		double t = dot(n,p - ray.getOrigin()) / o;
 		if (t > afterTime) {
-			return std::make_shared<HitHalfSpace>(r, t, *this);
+			return std::make_shared<HitHalfSpace>(ray, t, *this);
 		}
 		else {
 			return nullptr;

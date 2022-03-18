@@ -7,7 +7,7 @@
 
 class Solid {
 public:
-	virtual std::shared_ptr<Hit> firstHit(const Ray& r, double afterTime) const = 0;
+	virtual std::shared_ptr<Hit> firstHit(const Ray& ray, double afterTime) const = 0;
 };
 
 #endif 
