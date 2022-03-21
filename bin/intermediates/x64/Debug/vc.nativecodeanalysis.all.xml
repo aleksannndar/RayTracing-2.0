@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\include\objects\</FILEPATH>
+      <FILENAME>Sphere.h</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Sphere::rSqr' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Sphere::{ctor}</FUNCTION>
+    <DECORATED>??0Sphere@@QEAA@XZ</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Sphere::rSqr</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\include\objects\</FILEPATH>
+      <FILENAME>HalfSpace.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HalfSpace::fLSqr' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HalfSpace::{ctor}</FUNCTION>
+    <DECORATED>??0HalfSpace@@QEAA@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HalfSpace::fLSqr</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\</FILEPATH>
+      <FILENAME>Main.cpp</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>62</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\</FILEPATH>
+      <FILENAME>Main.cpp</FILENAME>
+      <LINE>52</LINE>
+      <COLUMN>65</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\src\utility\</FILEPATH>
+      <FILENAME>MainHeader.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>35</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>randomDouble</FUNCTION>
+    <DECORATED>?randomDouble@@YANXZ</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

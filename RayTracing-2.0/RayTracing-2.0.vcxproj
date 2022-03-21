@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="src\colliders\Collision.cpp" />
     <ClCompile Include="src\objects\HalfSpace.cpp" />
     <ClCompile Include="src\objects\hits\HitHalfSpace.cpp" />
     <ClCompile Include="src\objects\hits\HitSphere.cpp" />
@@ -160,6 +161,9 @@
     <ClCompile Include="src\utility\Vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\colliders\BruteForceCollider.h" />
+    <ClInclude Include="include\colliders\Collider.h" />
+    <ClInclude Include="include\colliders\Collision.h" />
     <ClInclude Include="include\objects\HalfSpace.h" />
     <ClInclude Include="include\objects\hits\HitHalfSpace.h" />
     <ClInclude Include="include\objects\hits\HitSphere.h" />

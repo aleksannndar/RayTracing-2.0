@@ -132,3 +132,11 @@ Vec3 normal(const Vec3& v) {
 		return Vec3(1.0, 0.0, 0.0);
 	}
 }
+
+bool operator ==(const Vec3& v, const Vec3& u) {
+	return (v.getX() == u.getX() && v.getY() == u.getY() && v.getZ() == u.getZ());
+}
+
+bool operator !=(const Vec3& v, const Vec3& u) {
+	return (v.getX() != u.getX() || v.getY() != u.getY() || v.getZ() != u.getZ());
+}

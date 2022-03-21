@@ -18,5 +18,5 @@ Camera::Camera(const Vec3& origin, const Vec3& lookAt, double aspectRatio, doubl
 }
 
 Ray Camera::getRay(double i, double j) const{
-	return Ray(origin, lowerLeftCorner + i* horizontal + j*vertical - origin);
+	return Ray(origin, lowerLeftCorner + i * horizontal + j * vertical - origin);
 }

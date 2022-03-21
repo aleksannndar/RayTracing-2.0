@@ -63,4 +63,7 @@ Vec3 unitVector(const Vec3& v);
 
 Vec3 normal(const Vec3& v);
 
+bool operator ==(const Vec3& v, const Vec3& u);
+
+bool operator !=(const Vec3& v, const Vec3& u);
 #endif 

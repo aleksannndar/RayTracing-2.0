@@ -10,7 +10,7 @@ void writeColor(const Vec3& color, int samplesPerPixel) {
 	g = std::sqrt(g * scale);
 	b = std::sqrt(b * scale);
 
-	std::cout << static_cast<int>(color.getX() * 255.99) << " " 
-			<< static_cast<int>(color.getY() * 255.99) << " "
-			<< static_cast<int>(color.getZ() * 255.99) << "\n";
+	std::cout << static_cast<int>(clamp(r, 0.0, 0.99) * 255.99) << " " 
+			<< static_cast<int>(clamp(g, 0.0, 0.99) * 255.99) << " "
+			<< static_cast<int>(clamp(b, 0.0, 0.99) * 255.99) << "\n";
 }
