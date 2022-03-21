@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="src\colliders\BruteForceCollider.cpp" />
     <ClCompile Include="src\colliders\Collision.cpp" />
     <ClCompile Include="src\objects\HalfSpace.cpp" />
     <ClCompile Include="src\objects\hits\HitHalfSpace.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="include\objects\hits\HitHalfSpace.h" />
     <ClInclude Include="include\objects\hits\HitSphere.h" />
     <ClInclude Include="include\objects\Sphere.h" />
+    <ClInclude Include="include\scenes\Scene.h" />
     <ClInclude Include="include\utility\Body.h" />
     <ClInclude Include="include\utility\Camera.h" />
     <ClInclude Include="include\utility\Color.h" />
