@@ -154,6 +154,8 @@
     <ClCompile Include="src\objects\hits\HitHalfSpace.cpp" />
     <ClCompile Include="src\objects\hits\HitSphere.cpp" />
     <ClCompile Include="src\objects\Sphere.cpp" />
+    <ClCompile Include="src\raytracers\RayTracer.cpp" />
+    <ClCompile Include="src\scenes\Scene.cpp" />
     <ClCompile Include="src\utility\Camera.cpp" />
     <ClCompile Include="src\utility\Color.cpp" />
     <ClCompile Include="src\utility\MainHeader.cpp" />
@@ -169,6 +171,7 @@
     <ClInclude Include="include\objects\hits\HitHalfSpace.h" />
     <ClInclude Include="include\objects\hits\HitSphere.h" />
     <ClInclude Include="include\objects\Sphere.h" />
+    <ClInclude Include="include\raytracers\RayTracer.h" />
     <ClInclude Include="include\scenes\Scene.h" />
     <ClInclude Include="include\utility\Body.h" />
     <ClInclude Include="include\utility\Camera.h" />
