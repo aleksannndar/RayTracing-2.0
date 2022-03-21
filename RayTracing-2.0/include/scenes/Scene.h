@@ -9,10 +9,13 @@
 class Scene {
 private:
 	std::vector<std::shared_ptr<Body>> bodies;
+	Vec3 backgroundColor;
 public:
-	Scene(std::vector<std::shared_ptr<Body>> bodies);
+	Scene(std::vector<std::shared_ptr<Body>> bodies, const Vec3& backgroundColor);
 
 	std::vector<std::shared_ptr<Body>> getBodies() const;
+
+	Vec3 getBackgroundColor() const;
 
 };
 
