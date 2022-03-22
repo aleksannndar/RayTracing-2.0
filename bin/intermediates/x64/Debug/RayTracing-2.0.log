@@ -1,5 +1,11 @@
 ﻿  Main.cpp
-E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\Main.cpp(64,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\Main.cpp(39,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   BruteForceCollider.cpp
+  Collision.cpp
+  RayTracer.cpp
+  RayTracerSimple.cpp
+  Scene.cpp
+  Material.cpp
+  Uniform.cpp
   Generating Code...
   RayTracing-2.0.vcxproj -> E:\Programiranje\C++Practice\RayTracing-2.0\bin\x64\Debug\RayTracing-2.0.exe

@@ -160,6 +160,7 @@
     <ClCompile Include="src\utility\Camera.cpp" />
     <ClCompile Include="src\utility\Color.cpp" />
     <ClCompile Include="src\utility\MainHeader.cpp" />
+    <ClCompile Include="src\utility\Material.cpp" />
     <ClCompile Include="src\utility\Ray.cpp" />
     <ClCompile Include="src\utility\Uniform.cpp" />
     <ClCompile Include="src\utility\Vec3.cpp" />
@@ -180,6 +181,7 @@
     <ClInclude Include="include\utility\Color.h" />
     <ClInclude Include="include\objects\hits\Hit.h" />
     <ClInclude Include="include\utility\MainHeader.h" />
+    <ClInclude Include="include\utility\Material.h" />
     <ClInclude Include="include\utility\Ray.h" />
     <ClInclude Include="include\utility\Solid.h" />
     <ClInclude Include="include\utility\Uniform.h" />

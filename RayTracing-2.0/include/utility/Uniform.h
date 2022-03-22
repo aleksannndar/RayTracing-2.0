@@ -7,12 +7,12 @@
 class Uniform : public Body {
 private:
 	std::shared_ptr<Solid> solid;
-	Vec3 material;
+	Material material;
 public:
-	Uniform(const std::shared_ptr<Solid> solid,const Vec3& material);
+	Uniform(const std::shared_ptr<Solid> solid,const Material& material);
 
 	std::shared_ptr<Solid> getSolid() const override;
-	Vec3 materialAt(const Hit& hit) const override;
+	Material materialAt(const Hit& hit) const override;
 };
 
 #endif

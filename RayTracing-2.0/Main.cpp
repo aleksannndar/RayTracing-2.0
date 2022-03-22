@@ -11,6 +11,7 @@
 #include "include/utility/Uniform.h"
 #include "include/raytracers/RayTracerSimple.h"
 #include "include/colliders/BruteForceCollider.h"
+#include "include/utility/Material.h"
 
 
 //Vec3 getColor(const Ray& r) {
@@ -38,9 +39,10 @@ int main() {
 	int imageWidth = imageHeight * aspectRatio;
 	int samplesPerPixel = 10;
 
-	std::shared_ptr<Uniform> o1 = std::make_shared<Uniform>(std::make_shared<Sphere>(Vec3(1.0, -1, -2.0), 1.0), Vec3(0.6, 0.4, 0.4));
-	std::shared_ptr<Uniform> o2 = std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(0.0, -1.0, 0.0), Vec3(0.0, 1.0, 0.0)), Vec3(0.7, 0.1, 0.1));
-	std::shared_ptr<Uniform> o3 = std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(1.0, 0.0, 0.0), Vec3(-1.0, 0.0, 0.0)), Vec3(0.1, 0.7, 0.1));
+	//Scene
+	std::shared_ptr<Uniform> o1 = std::make_shared<Uniform>(std::make_shared<Sphere>(Vec3(1.0, -1, -2.0), 1.0), Material(Vec3(0.6, 0.4, 0.4)));
+	std::shared_ptr<Uniform> o2 = std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(0.0, -1.0, 0.0), Vec3(0.0, 1.0, 0.0)), Material(Vec3(0.7, 0.1, 0.1)));
+	std::shared_ptr<Uniform> o3 = std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(1.0, 0.0, 0.0), Vec3(-1.0, 0.0, 0.0)), Material(Vec3(0.1, 0.7, 0.1)));
 
 	std::vector<std::shared_ptr<Body>> bodies;
 	bodies.push_back(o1);
@@ -49,9 +51,13 @@ int main() {
 
 	std::shared_ptr<Scene> scene = std::make_shared<Scene>(bodies, Vec3(0.0,0.0,0.0));
 
+	//Collider
 	std::shared_ptr<BruteForceCollider> collider = std::make_shared<BruteForceCollider>(bodies);
 
+	//Camera
 	Camera cam = Camera(Vec3(0.0,0.0, 0.0), Vec3(0.0,0.0,-1.0), aspectRatio, 90.0);
+
+	//RayTracer
 	RayTracerSimple rayTracer = RayTracerSimple(scene, collider);
 
 	std::cout << "P3\n" << imageWidth << " " << imageHeight << "\n255\n";
