@@ -11,10 +11,12 @@ Collision BruteForceCollider::collide(const Ray& ray) const {
 
 	for (std::shared_ptr<Body> b : bodies) {
 		std::shared_ptr<Hit> h = b->getSolid()->firstHit(ray, 0.0);
-		if (h != nullptr && h->getT() < infinity) {
-			minHitT = h->getT();
-			minHit = h;
-			minHitBody = b;
+		if (h != nullptr) {
+			if (h->getT() < minHitT) {
+				minHitT = h->getT();
+				minHit = h;
+				minHitBody = b;
+			}
 		}
 	}
 
