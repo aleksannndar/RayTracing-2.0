@@ -12,6 +12,7 @@
 #include "include/raytracers/RayTracerSimple.h"
 #include "include/colliders/BruteForceCollider.h"
 #include "include/utility/Material.h"
+#include "include/raytracers/Sonar.h"
 
 
 //Vec3 getColor(const Ray& r) {
@@ -58,7 +59,7 @@ int main() {
 	Camera cam = Camera(Vec3(0.0,0.0, 0.0), Vec3(0.0,0.0,-1.0), aspectRatio, 90.0);
 
 	//RayTracer
-	RayTracerSimple rayTracer = RayTracerSimple(scene, collider);
+	std::shared_ptr<RayTracer> rayTracer = std::make_shared<Sonar>(scene, collider);
 
 	std::cout << "P3\n" << imageWidth << " " << imageHeight << "\n255\n";
 	for (int i = imageHeight - 1; i >= 0; --i) {
@@ -69,7 +70,7 @@ int main() {
 				double u = (j + (randomDouble() - 0.5) * 2.0) / (imageWidth - 1);
 				double v = (i + (randomDouble() - 0.5) * 2.0) / (imageHeight - 1);
 				Ray r = cam.getRay(u, v);
-				color += rayTracer.sample(r);
+				color += rayTracer->sample(r);
 			}
 			writeColor(color, samplesPerPixel);
 		}
