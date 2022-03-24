@@ -6,7 +6,7 @@ Vec3 Sonar::sample(const Ray& ray) const {
 	std::shared_ptr<Hit> hit = collision.getHit();
 
 	if (hit == nullptr) {
-		return Vec3(0.0, 0.0, 0.0);
+		return this->getScene()->getBackgroundColor();
 	}
 	else {
 		double gray = 1.0 / (1.0 + hit->getT());
