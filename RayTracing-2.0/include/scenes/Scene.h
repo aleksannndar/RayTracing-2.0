@@ -8,11 +8,12 @@
 #include "../utility/Light.h"
 
 class Scene {
-private:
+protected:
 	std::vector<std::shared_ptr<Body>> bodies;
 	std::vector<std::shared_ptr<Light>> lights;
 	Vec3 backgroundColor;
 public:
+	Scene() {};
 	Scene(std::vector<std::shared_ptr<Body>> bodies, std::vector<std::shared_ptr<Light>> lights, const Vec3& backgroundColor);
 
 	std::vector<std::shared_ptr<Body>> getBodies() const;
@@ -20,6 +21,12 @@ public:
 	Vec3 getBackgroundColor() const;
 
 	std::vector<std::shared_ptr<Light>> getLights() const;
+
+	void addBodiesFrom(const Scene& other);
+
+	void addLightsFrom(const Scene& other);
+
+	void addAll(const Scene& other);
 
 };
 

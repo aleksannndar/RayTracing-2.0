@@ -17,3 +17,22 @@ Vec3 Scene::getBackgroundColor() const {
 std::vector<std::shared_ptr<Light>> Scene::getLights() const{
 	return lights;
 }
+
+void Scene::addBodiesFrom(const Scene& other) {
+	for (std::shared_ptr<Body> b : other.getBodies()) {
+		bodies.push_back(b);
+	}
+}
+
+
+void Scene::addLightsFrom(const Scene& other) {
+	for (std::shared_ptr<Light> l : other.getLights()) {
+		lights.push_back(l);
+	}
+}
+
+void Scene::addAll(const Scene& other) {
+	addBodiesFrom(other);
+	addLightsFrom(other);
+}
+

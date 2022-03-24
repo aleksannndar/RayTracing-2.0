@@ -11,6 +11,8 @@ private:
 public:
 	Light(const Vec3& origin, const Vec3& color);
 
+	Light(const Vec3& origin);
+
 	Vec3 getOrigin() const;
 
 	Vec3 getColor() const;

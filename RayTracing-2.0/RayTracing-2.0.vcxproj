@@ -157,7 +157,9 @@
     <ClCompile Include="src\raytracers\RayTracer.cpp" />
     <ClCompile Include="src\raytracers\RayTracerSimple.cpp" />
     <ClCompile Include="src\raytracers\Sonar.cpp" />
+    <ClCompile Include="src\scenes\InitialScene.cpp" />
     <ClCompile Include="src\scenes\Scene.cpp" />
+    <ClCompile Include="src\scenes\WhiteRoom.cpp" />
     <ClCompile Include="src\utility\Camera.cpp" />
     <ClCompile Include="src\utility\Color.cpp" />
     <ClCompile Include="src\utility\Light.cpp" />
@@ -180,6 +182,7 @@
     <ClInclude Include="include\raytracers\Sonar.h" />
     <ClInclude Include="include\scenes\InitialScene.h" />
     <ClInclude Include="include\scenes\Scene.h" />
+    <ClInclude Include="include\scenes\WhiteRoom.h" />
     <ClInclude Include="include\utility\Body.h" />
     <ClInclude Include="include\utility\Camera.h" />
     <ClInclude Include="include\utility\Color.h" />

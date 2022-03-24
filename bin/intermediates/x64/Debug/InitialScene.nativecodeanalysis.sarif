@@ -1,0 +1,480 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Sphere::rSqr' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/Sphere.h"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 2,
+                  "endLine": 12,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Sphere::{ctor}",
+                  "decoratedName": "??0Sphere@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Sphere::rSqr"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Sphere::r' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/Sphere.h"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 2,
+                  "endLine": 12,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Sphere::{ctor}",
+                  "decoratedName": "??0Sphere@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Sphere::r"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HalfSpace::e_f' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/HalfSpace.h"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 2,
+                  "endLine": 18,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HalfSpace::{ctor}",
+                  "decoratedName": "??0HalfSpace@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HalfSpace::e_f"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HalfSpace::f_e' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/HalfSpace.h"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 2,
+                  "endLine": 18,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HalfSpace::{ctor}",
+                  "decoratedName": "??0HalfSpace@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HalfSpace::f_e"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HalfSpace::eLSqr' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/HalfSpace.h"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 2,
+                  "endLine": 18,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HalfSpace::{ctor}",
+                  "decoratedName": "??0HalfSpace@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HalfSpace::eLSqr"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HalfSpace::sinSqr' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/HalfSpace.h"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 2,
+                  "endLine": 18,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HalfSpace::{ctor}",
+                  "decoratedName": "??0HalfSpace@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HalfSpace::sinSqr"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HalfSpace::fLSqr' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/HalfSpace.h"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 2,
+                  "endLine": 18,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HalfSpace::{ctor}",
+                  "decoratedName": "??0HalfSpace@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HalfSpace::fLSqr"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.30.30706.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00007FF78E910C80 -il C:\\Users\\aleks\\AppData\\Local\\Temp\\_CL_eed62832ast -typedil -f src\\scenes\\InitialScene.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1930 -D_MSC_FULL_VER=193030706 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -permissive- -FoE:\\Programiranje\\C++Practice\\RayTracing-2.0\\bin\\intermediates\\x64\\Debug\\InitialScene.obj -FdE:\\Programiranje\\C++Practice\\RayTracing-2.0\\bin\\intermediates\\x64\\Debug\\vc143.pdb -external:W 3 -Gd -analyze:projectdirectory E:\\Programiranje\\C++Practice\\RayTracing-2.0\\RayTracing-2.0 -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I E:\\Programiranje\\C++Practice\\RayTracing-2.0\\RayTracing-2.0\\Include\\um -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\include -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I E:\\Programiranje\\C++Practice\\RayTracing-2.0\\RayTracing-2.0\\Include\\um -I E:\\Programiranje\\C++Practice\\RayTracing-2.0\\RayTracing-2.0\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/utility/vec3.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2f514ae767362d4a6e826ca60cb53619b1b5e222567e14e69e799f125de28776"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/vec3.h"
+          },
+          "hashes": {
+            "sha-256": "f4ac35eac4af5e26a21b6ca4fefb2be7fccc4250b4a43718f4b819a510775d48"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/utility/uniform.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "82dbc8d66e24246abc54534b87ef87df6f668def76320b43dcf8200d35d3d5e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/uniform.h"
+          },
+          "hashes": {
+            "sha-256": "75646841116b58676f49f56d0d39752f1016cac87c179cbd3332f2b7fbd851b3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/body.h"
+          },
+          "hashes": {
+            "sha-256": "0b3c55c3fd518f307173b784eee9e5c8b0e3b3420ce94de92a6cb7cab9f848d5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/mainheader.h"
+          },
+          "hashes": {
+            "sha-256": "9805451c9fd206d97ba3b997b4269f9a86c333278f83382c8ac8315a1b3c2997"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/ray.h"
+          },
+          "hashes": {
+            "sha-256": "f44547326adeb5cfd8f6f33ea655ebafa1e04b9709e3e84f35350abb15fc7bcb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/solid.h"
+          },
+          "hashes": {
+            "sha-256": "8a214a52c1f4006c8e32ce6147fafd618d65d947d2bbb1d5b550a5502e6ce963"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/objects/hits/hit.h"
+          },
+          "hashes": {
+            "sha-256": "615f26ce092a099cfbd748e8a788645b2837b3d98f2156649c54d90d3fe0ad3d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/material.h"
+          },
+          "hashes": {
+            "sha-256": "1a89113a6af840b81e7055ed904df99600333e9a10873d73ab6b0df1032657e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/utility/ray.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "50b448cca05c9f73a7c861fa96c3ad5966e647c6a2e5e0f45116466f62b7a3d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/utility/material.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "a0befd41ac25844d4d52c3d1501867dced627534407f41d86cb875e449051d02"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/src/utility/MainHeader.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "55a43badcfa582ca3e81a5b27c69bf35b5884125494a99c65f629e5f6b59f09c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/utility/light.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "1b3c60422fe933cf34fdcc4c5bc8b9591eab29d7f50f77570506df4068ac65a8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/light.h"
+          },
+          "hashes": {
+            "sha-256": "b55cd1bba46dde9528824165746fc84a360d334bdad7c84611f7fb05d8e99dea"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/utility/color.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "504b9464e23163d7855a72eba92f859d96cb1ba3bf7f4bb83622e6b0243aa6f5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/color.h"
+          },
+          "hashes": {
+            "sha-256": "fbe0da10a23b7f35cb7f67309d41c5f1c13c5e12d9b3cd53d4f1dff5cabea813"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/utility/camera.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "42772629d7eb327014317c05c2e9d2df108da554d2b9b47baa98ff194ca4132c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/utility/camera.h"
+          },
+          "hashes": {
+            "sha-256": "2ece5af25da64c4035512ed9133280b7afe32e3a01425e7fc25bf9479350ac77"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/scenes/scene.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "f221d4f7413adfb3bf4783627b3590c9789401dbafcc20781f7f0a652320257f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/scenes/scene.h"
+          },
+          "hashes": {
+            "sha-256": "31aedfb9234d2df67295cdff0693ce0b3b07622b4da04d191453c9af539303ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/Sphere.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "e81dd5818e110456ebbba2d78397c04726efb1e72bcf7bda037113b8eb549f09"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///E:/Programiranje/C++Practice/RayTracing-2.0/RayTracing-2.0/include/objects/HalfSpace.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "09b7ccfb842bcd6832238fb4308a8e0a1304a3e7a1df6328a157fbec741ccb45"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/src/scenes/initialscene.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "b7f09add3146d6ea657e37b342e8afa0f732793bf4ad01c42779bb90a4aa8ecc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/programiranje/c++practice/raytracing-2.0/raytracing-2.0/include/scenes/initialscene.h"
+          },
+          "hashes": {
+            "sha-256": "1e668e40c6abad5ce4598f6d4839bcafdb6c67a3bb9b8f292182b377c26dc0bb"
+          }
+        }
+      ]
+    }
+  ]
+}

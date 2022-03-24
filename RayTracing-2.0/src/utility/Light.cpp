@@ -5,6 +5,11 @@ Light::Light(const Vec3& origin, const Vec3& color) {
 	this->color = color;
 }
 
+Light::Light(const Vec3& origin) {
+	this->origin = origin;
+	this->color = Vec3(1.0, 1.0, 1.0);
+}
+
 Vec3 Light::getOrigin() const {
 	return origin;
 }
