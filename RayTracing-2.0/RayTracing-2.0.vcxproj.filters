@@ -140,5 +140,8 @@
     <ClInclude Include="include\utility\Light.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\scenes\InitialScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

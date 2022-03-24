@@ -178,6 +178,7 @@
     <ClInclude Include="include\raytracers\RayTracer.h" />
     <ClInclude Include="include\raytracers\RayTracerSimple.h" />
     <ClInclude Include="include\raytracers\Sonar.h" />
+    <ClInclude Include="include\scenes\InitialScene.h" />
     <ClInclude Include="include\scenes\Scene.h" />
     <ClInclude Include="include\utility\Body.h" />
     <ClInclude Include="include\utility\Camera.h" />

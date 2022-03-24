@@ -14,25 +14,7 @@
 #include "include/utility/Material.h"
 #include "include/raytracers/Sonar.h"
 #include "include/utility/Light.h"
-
-
-//Vec3 getColor(const Ray& r) {
-//	std::shared_ptr<Uniform> o1 = std::make_shared<Uniform>(std::make_shared<Sphere>(Vec3(1.0, -1, -2.0), 1.0), Vec3(0.6, 0.4, 0.4));
-//	std::shared_ptr<Uniform> o2 = std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(0.0, -1.0, 0.0), Vec3(0.0, 1.0, 0.0)), Vec3(0.7, 0.1, 0.1));
-//	std::shared_ptr<Uniform> o3 = std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(1.0, 0.0, 0.0), Vec3(-1.0, 0.0, 0.0)), Vec3(0.1, 0.7, 0.1));
-//	
-//	std::vector<std::shared_ptr<Body>> bodies;
-//	bodies.push_back(o1);
-//	bodies.push_back(o2);
-//	bodies.push_back(o3);
-//
-//	Vec3 m = getMaterial(r, bodies);
-//	return m;
-//
-//	Vec3 unitDirection = unitVector(r.getDirection());
-//	double t = 0.5 * (unitDirection.getY() + 1.0);
-//	return (1.0 - t) * Vec3(1.0, 1.0, 1.0) + t * Vec3(0.5, 0.7, 1.0);
-//}
+#include "include/scenes/InitialScene.h"
 
 int main() {
 
@@ -42,28 +24,10 @@ int main() {
 	int samplesPerPixel = 10;
 
 	//Scene
-	//Objects
-	std::shared_ptr<Uniform> o1 = std::make_shared<Uniform>(std::make_shared<Sphere>(Vec3(0.5, -1, -2.0), 1.0), Material(Vec3(0.6, 0.4, 0.4)));
-	std::shared_ptr<Uniform> o2 = std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(0.0, -1.0, 0.0), Vec3(0.0, 1.0, 0.0)), Material(Vec3(0.7, 0.1, 0.1)));
-	std::shared_ptr<Uniform> o3 = std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(1.0, 0.0, 0.0), Vec3(-1.0, 0.0, 0.0)), Material(Vec3(0.1, 0.7, 0.1)));
-
-	std::vector<std::shared_ptr<Body>> bodies;
-	bodies.push_back(o1);
-	bodies.push_back(o2);
-	bodies.push_back(o3);
-
-	//Lights
-	std::shared_ptr<Light> l1 = std::make_shared<Light>(Vec3(0.0,0.0,0.0), Vec3(1.0,1.0,1.0));
-	std::shared_ptr<Light> l2 = std::make_shared<Light>(Vec3(-1.5, 0.0, -1.0), Vec3(0.4, 1.0, 0.3));
-
-	std::vector<std::shared_ptr<Light>> lights;
-	lights.push_back(l1);
-	lights.push_back(l2);
-
-	std::shared_ptr<Scene> scene = std::make_shared<Scene>(bodies, lights, Vec3(0.0,0.0,0.0));
+	std::shared_ptr<Scene> scene = std::make_shared<InitialScene>();
 
 	//Collider
-	std::shared_ptr<BruteForceCollider> collider = std::make_shared<BruteForceCollider>(bodies);
+	std::shared_ptr<BruteForceCollider> collider = std::make_shared<BruteForceCollider>(scene->getBodies());
 
 	//Camera
 	Camera cam = Camera(Vec3(0.0,0.0, 0.0), Vec3(0.0,0.0,-1.0), aspectRatio, 90.0);
