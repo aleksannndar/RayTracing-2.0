@@ -15,16 +15,17 @@
 #include "include/raytracers/Sonar.h"
 #include "include/utility/Light.h"
 #include "include/scenes/InitialScene.h"
+#include "include/scenes/DiscoRoom.h"
 
 int main() {
 
-	double aspectRatio = 16.0 / 9.0;
-	int imageHeight = 400;
+	double aspectRatio = 1.0;
+	int imageHeight = 720;
 	int imageWidth = imageHeight * aspectRatio;
-	int samplesPerPixel = 10;
+	int samplesPerPixel = 5;
 
 	//Scene
-	std::shared_ptr<Scene> scene = std::make_shared<InitialScene>();
+	std::shared_ptr<Scene> scene = std::make_shared<DiscoRoom>(12, 3, 6193);
 
 	//Collider
 	std::shared_ptr<BruteForceCollider> collider = std::make_shared<BruteForceCollider>(scene->getBodies());

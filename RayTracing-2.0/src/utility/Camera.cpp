@@ -2,8 +2,8 @@
 
 Camera::Camera(const Vec3& origin, const Vec3& lookAt, double aspectRatio, double vfov) {
 	this->origin = origin;
-	double theta = vfov / 2.0;
-	double h = std::tan(theta);
+	double theta = degreesToRadians(vfov);
+	double h = std::tan(theta / 2.0);
 	double heightViewport = 2.0 * h;
 	double widthViewport = aspectRatio * heightViewport;
 

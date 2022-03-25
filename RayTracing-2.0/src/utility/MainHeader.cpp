@@ -1,7 +1,7 @@
 #include "../../include/utility/MainHeader.h"
 
 double degreesToRadians(double degrees) {
-	return degrees / (2 * pi);
+	return degrees * pi / 180;
 }
 
 double randomDouble() {

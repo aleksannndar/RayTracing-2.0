@@ -1,5 +1,5 @@
 #include "../../include/utility/Vec3.h"
-
+#include "../../include/utility/MainHeader.h"
 #include<cmath>
 
 Vec3::Vec3(double x, double y, double z) {
@@ -139,4 +139,32 @@ bool operator ==(const Vec3& v, const Vec3& u) {
 
 bool operator !=(const Vec3& v, const Vec3& u) {
 	return (v.getX() != u.getX() || v.getY() != u.getY() || v.getZ() != u.getZ());
+}
+
+Vec3 Vec3::randomVec(){
+	return Vec3(randomDouble(), randomDouble(), randomDouble());
+}
+
+Vec3& Vec3::Z0toMP() {
+	x *= 2.0;
+	y *= 2.0;
+	z *= 2.0;
+
+	x -= 1;
+	y -= 1;
+	z -= 1;
+	
+	return *this;
+}
+
+Vec3& Vec3::MPtoZ0() {
+	x += 1;
+	y += 1;
+	z += 1;
+
+	x /= 2.0;
+	y /= 2.0;
+	z /= 2.0;
+
+	return *this;
 }

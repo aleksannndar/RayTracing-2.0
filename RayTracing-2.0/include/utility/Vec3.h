@@ -37,6 +37,12 @@ public:
 
 	double lengthSquared() const;
 
+	static Vec3 randomVec();
+
+	Vec3& Z0toMP();
+
+	Vec3& MPtoZ0();
+
 };
 
 std::ostream& operator<<(std::ostream& out, Vec3& v);

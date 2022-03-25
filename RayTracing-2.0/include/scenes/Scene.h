@@ -26,7 +26,7 @@ public:
 
 	void addLightsFrom(const Scene& other);
 
-	void addAll(const Scene& other);
+	void addAllFrom(const Scene& other);
 
 };
 

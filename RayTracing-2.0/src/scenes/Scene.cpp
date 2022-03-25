@@ -31,7 +31,7 @@ void Scene::addLightsFrom(const Scene& other) {
 	}
 }
 
-void Scene::addAll(const Scene& other) {
+void Scene::addAllFrom(const Scene& other) {
 	addBodiesFrom(other);
 	addLightsFrom(other);
 }

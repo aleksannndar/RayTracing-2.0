@@ -157,6 +157,7 @@
     <ClCompile Include="src\raytracers\RayTracer.cpp" />
     <ClCompile Include="src\raytracers\RayTracerSimple.cpp" />
     <ClCompile Include="src\raytracers\Sonar.cpp" />
+    <ClCompile Include="src\scenes\DiscoRoom.cpp" />
     <ClCompile Include="src\scenes\InitialScene.cpp" />
     <ClCompile Include="src\scenes\Scene.cpp" />
     <ClCompile Include="src\scenes\WhiteRoom.cpp" />
@@ -180,6 +181,7 @@
     <ClInclude Include="include\raytracers\RayTracer.h" />
     <ClInclude Include="include\raytracers\RayTracerSimple.h" />
     <ClInclude Include="include\raytracers\Sonar.h" />
+    <ClInclude Include="include\scenes\DiscoRoom.h" />
     <ClInclude Include="include\scenes\InitialScene.h" />
     <ClInclude Include="include\scenes\Scene.h" />
     <ClInclude Include="include\scenes\WhiteRoom.h" />
