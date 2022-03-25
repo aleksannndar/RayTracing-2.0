@@ -1,11 +1,12 @@
 #include "../../include/scenes/DiscoRoom.h"
 #include "../../include/scenes/WhiteRoom.h"
+#include "../../include/scenes/OpenRoom.h"
 #include "../../include/utility/Uniform.h"
 #include "../../include/objects/Sphere.h"
 #include "../../include/objects/HalfSpace.h"
 
 DiscoRoom::DiscoRoom(int nBalls, int nLights, int seed) {
-	addBodiesFrom(WhiteRoom());
+	addBodiesFrom(OpenRoom());
 
 	srand(seed);
 	for (int i = 0; i < nBalls; i++) {

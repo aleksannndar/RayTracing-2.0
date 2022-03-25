@@ -8,7 +8,7 @@ Camera::Camera(const Vec3& origin, const Vec3& lookAt, double aspectRatio, doubl
 	double widthViewport = aspectRatio * heightViewport;
 
 	w = unitVector(origin - lookAt);
-	u = cross(w, Vec3(0.0,1.0,0.0));
+	u = unitVector(cross(w, Vec3(0.0,1.0,0.0)));
 	v = cross(u,w);
 
 	vertical = v * heightViewport;

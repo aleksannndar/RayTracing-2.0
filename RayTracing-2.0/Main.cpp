@@ -16,22 +16,23 @@
 #include "include/utility/Light.h"
 #include "include/scenes/InitialScene.h"
 #include "include/scenes/DiscoRoom.h"
+#include "include/scenes/OpenRoom.h"
 
 int main() {
 
 	double aspectRatio = 1.0;
-	int imageHeight = 720;
+	int imageHeight = 400;
 	int imageWidth = imageHeight * aspectRatio;
 	int samplesPerPixel = 5;
 
 	//Scene
-	//std::shared_ptr<Scene> scene = std::make_shared<DiscoRoom>(12, 3, 6193);
-	std::shared_ptr<Scene> scene = std::make_shared<InitialScene>();
+	//std::shared_ptr<Scene> scene = std::make_shared<DiscoRoom>(16, 4, 3261);
+	std::shared_ptr<Scene> scene = std::make_shared<OpenRoom>();
 	//Collider
 	std::shared_ptr<BruteForceCollider> collider = std::make_shared<BruteForceCollider>(scene->getBodies());
 
 	//Camera
-	Camera cam = Camera(Vec3(0.0,0.0, 0.0), Vec3(0.0,0.0,-1.0), aspectRatio, 90.0);
+	Camera cam = Camera(Vec3(0.0,0.0,2.0), Vec3(0.0,0.0,0.0), aspectRatio, 90.0);
 
 	//RayTracer
 	std::shared_ptr<RayTracer> rayTracer = std::make_shared<RayTracerSimple>(scene, collider);

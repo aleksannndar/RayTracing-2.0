@@ -9,6 +9,7 @@ e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\light.ob
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\color.obj
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\camera.obj
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\scene.obj
+e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\initialscene.obj
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\sonar.obj
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\raytracersimple.obj
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\raytracer.obj
@@ -19,9 +20,11 @@ e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\halfspac
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\collision.obj
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\bruteforcecollider.obj
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\main.obj
-e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\initialscene.obj
-e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\raytracing-2.0.ilk
+e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\whiteroom.obj
+e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\discoroom.obj
+e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\openroom.obj
 e:\programiranje\c++practice\raytracing-2.0\bin\x64\debug\raytracing-2.0.exe
+e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\raytracing-2.0.ilk
 e:\programiranje\c++practice\raytracing-2.0\bin\x64\debug\raytracing-2.0.pdb
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\bruteforcecollider.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\camera.nativecodeanalysis.xml
@@ -30,7 +33,9 @@ e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\color.na
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\halfspace.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\hithalfspace.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\hitsphere.nativecodeanalysis.xml
+e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\initialscene.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\light.nativecodeanalysis.xml
+e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\main.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\mainheader.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\material.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\ray.nativecodeanalysis.xml
@@ -40,6 +45,7 @@ e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\scene.na
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\sonar.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\sphere.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\uniform.nativecodeanalysis.xml
+e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\vc.nativecodeanalysis.all.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\vec3.nativecodeanalysis.xml
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\raytracing-2.0.vcxproj.filelistabsolute.txt
 e:\programiranje\c++practice\raytracing-2.0\bin\intermediates\x64\debug\raytracing-2.0.tlog\cl.command.1.tlog

@@ -121,7 +121,7 @@ Vec3 cross(const Vec3& v, const Vec3& u) {
 }
 
 Vec3 unitVector(const Vec3& v) {
-	return v / v.lengthSquared();
+	return v / v.length();
 }
 
 Vec3 normal(const Vec3& v) {

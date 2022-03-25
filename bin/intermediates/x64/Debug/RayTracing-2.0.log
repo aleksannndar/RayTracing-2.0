@@ -1,3 +1,2 @@
-﻿  Main.cpp
-E:\Programiranje\C++Practice\RayTracing-2.0\RayTracing-2.0\Main.cpp(24,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+﻿  Vec3.cpp
   RayTracing-2.0.vcxproj -> E:\Programiranje\C++Practice\RayTracing-2.0\bin\x64\Debug\RayTracing-2.0.exe

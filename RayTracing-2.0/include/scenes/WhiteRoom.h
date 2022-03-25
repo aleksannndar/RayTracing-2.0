@@ -8,5 +8,5 @@ public:
 	WhiteRoom();
 };
 
-#endif // !WHITE_ROOM_H
+#endif
 
