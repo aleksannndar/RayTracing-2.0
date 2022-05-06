@@ -1,7 +1,6 @@
 #include "../../include/raytracers/RayTracerSimple.h"
 #include "../../include/utility/Light.h"
 
-
 Vec3 RayTracerSimple::sample(const Ray& ray) const {
 	Collision collision = this->getCollider()->collide(ray);
 	std::shared_ptr<Body> body = collision.getBody();
@@ -18,9 +17,9 @@ Vec3 RayTracerSimple::sample(const Ray& ray) const {
 		Vec3 l = light->getOrigin() - p;
 
 		Ray rayToLight = Ray(p, l);
-		std::shared_ptr<Hit> hitLight = this->getCollider()->collide(rayToLight).getHit();
+		//std::shared_ptr<Hit> hitLight = this->getCollider()->collide(rayToLight).getHit();
 
-		if (hitLight == nullptr || hitLight->getT() > 1) {
+		if (!this->getCollider()->collidesIn01(rayToLight)) {
 			double lLengthSqr = l.lengthSquared();
 			double lLength = std::sqrt(lLengthSqr);
 			double cosNL = dot(n_, l) / lLength;

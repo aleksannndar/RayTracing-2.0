@@ -21,18 +21,18 @@
 int main() {
 
 	double aspectRatio = 1.0;
-	int imageHeight = 400;
+	int imageHeight = 720;
 	int imageWidth = imageHeight * aspectRatio;
-	int samplesPerPixel = 5;
+	int samplesPerPixel = 10;
 
 	//Scene
-	//std::shared_ptr<Scene> scene = std::make_shared<DiscoRoom>(16, 4, 3261);
-	std::shared_ptr<Scene> scene = std::make_shared<OpenRoom>();
+	std::shared_ptr<Scene> scene = std::make_shared<DiscoRoom>(32, 6, 11679);
+	//std::shared_ptr<Scene> scene = std::make_shared<InitialScene>();
 	//Collider
 	std::shared_ptr<BruteForceCollider> collider = std::make_shared<BruteForceCollider>(scene->getBodies());
 
 	//Camera
-	Camera cam = Camera(Vec3(0.0,0.0,2.0), Vec3(0.0,0.0,0.0), aspectRatio, 90.0);
+	Camera cam = Camera(Vec3(0.0,0.0,2.0), Vec3(0.0,0.0,0.0), aspectRatio, 50.0);
 
 	//RayTracer
 	std::shared_ptr<RayTracer> rayTracer = std::make_shared<RayTracerSimple>(scene, collider);

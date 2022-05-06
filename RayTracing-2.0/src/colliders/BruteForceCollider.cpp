@@ -22,3 +22,12 @@ Collision BruteForceCollider::collide(const Ray& ray) const {
 
 	return Collision(minHitBody, minHit);
 }
+
+bool BruteForceCollider::collidesIn01(const Ray& ray) const {
+	for (std::shared_ptr<Body> b : bodies) {
+		std::shared_ptr<Hit> hit = b->getSolid()->firstHit(ray, epsilon);
+		if (hit != nullptr && hit->getT() < 1)
+			return true;
+	}
+	return false;
+}

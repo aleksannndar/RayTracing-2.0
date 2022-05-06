@@ -13,6 +13,8 @@ public:
 	BruteForceCollider(std::vector<std::shared_ptr<Body>> bodies);
 
 	Collision collide(const Ray& ray) const override;
+
+	bool collidesIn01(const Ray& ray) const override;
 };
 
 #endif 
