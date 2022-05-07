@@ -9,12 +9,20 @@ Vec3 RayTracerSimple::sample(const Ray& ray) const {
 	if (hit == nullptr)
 		return getScene()->getBackgroundColor();
 
+	Material material = body->materialAt(*hit);
 	Vec3 n_ = hit->n_();
 	Vec3 p = ray.at(hit->getT());
 
 	Vec3 lightDiffuse = Vec3(0.0,0.0,0.0);
+	Vec3 lightSpecular = Vec3(0.0, 0.0, 0.0);
+
 	for (std::shared_ptr<Light> light : this->getScene()->getLights()) {
+		//Vector from hit point to origin of light
 		Vec3 l = light->getOrigin() - p;
+		//Vector from hit point to origin of ray
+		Vec3 pToO = ray.getOrigin() - p;
+
+		Vec3 pToOReflected = reflectedN(pToO, n_);
 
 		Ray rayToLight = Ray(p, l);
 		//std::shared_ptr<Hit> hitLight = this->getCollider()->collide(rayToLight).getHit();
@@ -23,11 +31,27 @@ Vec3 RayTracerSimple::sample(const Ray& ray) const {
 			double lLengthSqr = l.lengthSquared();
 			double lLength = std::sqrt(lLengthSqr);
 			double cosNL = dot(n_, l) / lLength;
+			
+			Vec3 irradiance = light->getColor() * (cosNL / lLengthSqr);
 
 			if (cosNL > 0)
-				lightDiffuse += light->getColor() * (cosNL / lLengthSqr);
+				lightDiffuse += irradiance;
+
+			//Check if angle between L and I is acute
+			double li = dot(l, pToOReflected);
+
+			if (li > 0) {
+				double cosLI = li / (lLength * pToOReflected.length());
+				lightSpecular += irradiance * std::pow(cosLI, material.getShininess());
+			}
+
 		}
 	}
 
-	return body->materialAt(*hit).getDiffuse() * lightDiffuse;
+	Vec3 result = Vec3(0.0, 0.0, 0.0);
+
+	result += (body->materialAt(*hit).getDiffuse() * lightDiffuse);
+	result += (body->materialAt(*hit).getSpecular() * lightSpecular);
+
+	return result;
 }

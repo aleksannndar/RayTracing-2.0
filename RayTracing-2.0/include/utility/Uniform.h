@@ -9,7 +9,7 @@ private:
 	std::shared_ptr<Solid> solid;
 	Material material;
 public:
-	Uniform(const std::shared_ptr<Solid> solid,const Material& material);
+	Uniform(const std::shared_ptr<Solid> solid, const Material& material);
 	Uniform(const std::shared_ptr<Solid> solid);
 
 	std::shared_ptr<Solid> getSolid() const override;

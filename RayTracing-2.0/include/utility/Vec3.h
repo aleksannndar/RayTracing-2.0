@@ -72,4 +72,8 @@ Vec3 normal(const Vec3& v);
 bool operator ==(const Vec3& v, const Vec3& u);
 
 bool operator !=(const Vec3& v, const Vec3& u);
+
+Vec3 reflected(const Vec3& r, const Vec3& n);
+
+Vec3 reflectedN(const Vec3& r, const Vec3& n);
 #endif 

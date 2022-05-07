@@ -26,7 +26,7 @@ int main() {
 	int samplesPerPixel = 10;
 
 	//Scene
-	std::shared_ptr<Scene> scene = std::make_shared<DiscoRoom>(32, 6, 11679);
+	std::shared_ptr<Scene> scene = std::make_shared<DiscoRoom>(20, 6, 11679);
 	//std::shared_ptr<Scene> scene = std::make_shared<InitialScene>();
 	//Collider
 	std::shared_ptr<BruteForceCollider> collider = std::make_shared<BruteForceCollider>(scene->getBodies());
