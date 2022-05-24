@@ -35,7 +35,7 @@ int main() {
 	Camera cam = Camera(Vec3(0.0,0.0,2.0), Vec3(0.0,0.0,0.0), aspectRatio, 50.0);
 
 	//RayTracer
-	std::shared_ptr<RayTracer> rayTracer = std::make_shared<RayTracerSimple>(scene, collider);
+	std::shared_ptr<RayTracer> rayTracer = std::make_shared<RayTracerSimple>(scene, collider, 6);
 
 	std::cout << "P3\n" << imageWidth << " " << imageHeight << "\n255\n";
 	for (int i = imageHeight - 1; i >= 0; --i) {

@@ -7,7 +7,7 @@ Uniform::Uniform(const std::shared_ptr<Solid> solid, const Material& material) {
 
 Uniform::Uniform(const std::shared_ptr<Solid> solid) {
 	this->solid = solid;
-	this->material = blackMaterial.setDiffuse(Vec3(1.0,1.0,1.0));
+	this->material = defaultMaterial;
 }
 
 std::shared_ptr<Solid> Uniform::getSolid() const {

@@ -176,3 +176,7 @@ Vec3 reflected(const Vec3& r, const Vec3& n) {
 Vec3 reflectedN(const Vec3& r, const Vec3& n) {
 	return r - 2 * (r - (dot(n, r) * n));
 }
+bool Vec3::notZero() const {
+	return x != 0 || y != 0 || z != 0;
+}
+

@@ -2,6 +2,12 @@
 #include "../../include/utility/Light.h"
 
 Vec3 RayTracerSimple::sample(const Ray& ray) const {
+	return sample(ray, maxDepth);
+}
+
+Vec3 RayTracerSimple::sample(const Ray& ray, int depthRemaining) const {
+	if (depthRemaining == 0)
+		return Vec3(0.0, 0.0, 0.0);
 	Collision collision = this->getCollider()->collide(ray);
 	std::shared_ptr<Body> body = collision.getBody();
 	std::shared_ptr<Hit> hit = collision.getHit();
@@ -16,14 +22,16 @@ Vec3 RayTracerSimple::sample(const Ray& ray) const {
 	Vec3 lightDiffuse = Vec3(0.0,0.0,0.0);
 	Vec3 lightSpecular = Vec3(0.0, 0.0, 0.0);
 
+	//Vector from hit point to origin of ray
+	Vec3 pToO = ray.getOrigin() - p;
+	//Reflected pToO
+	Vec3 pToOReflected = reflectedN(pToO, n_);
+
 	for (std::shared_ptr<Light> light : this->getScene()->getLights()) {
 		//Vector from hit point to origin of light
 		Vec3 l = light->getOrigin() - p;
-		//Vector from hit point to origin of ray
-		Vec3 pToO = ray.getOrigin() - p;
 
-		Vec3 pToOReflected = reflectedN(pToO, n_);
-
+		//Ray from hit to light
 		Ray rayToLight = Ray(p, l);
 		//std::shared_ptr<Hit> hitLight = this->getCollider()->collide(rayToLight).getHit();
 
@@ -49,9 +57,12 @@ Vec3 RayTracerSimple::sample(const Ray& ray) const {
 	}
 
 	Vec3 result = Vec3(0.0, 0.0, 0.0);
-
 	result += (body->materialAt(*hit).getDiffuse() * lightDiffuse);
 	result += (body->materialAt(*hit).getSpecular() * lightSpecular);
+
+	if (material.getReflective().notZero()) {
+		result += sample(Ray(p, pToOReflected), depthRemaining - 1) * material.getReflective();
+	}
 
 	return result;
 }

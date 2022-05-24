@@ -43,6 +43,8 @@ public:
 
 	Vec3& MPtoZ0();
 
+	bool notZero() const;
+
 };
 
 std::ostream& operator<<(std::ostream& out, Vec3& v);

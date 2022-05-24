@@ -12,3 +12,7 @@ std::shared_ptr<Scene> RayTracer::getScene() const{
 std::shared_ptr<Collider> RayTracer::getCollider() const {
 	return collider;
 }
+
+//int RayTracer::getMaxDepth() const {
+//	return maxDepth;
+//}
