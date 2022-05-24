@@ -161,6 +161,7 @@
     <ClCompile Include="src\scenes\InitialScene.cpp" />
     <ClCompile Include="src\scenes\OpenRoom.cpp" />
     <ClCompile Include="src\scenes\Scene.cpp" />
+    <ClCompile Include="src\scenes\TestScene.cpp" />
     <ClCompile Include="src\scenes\WhiteRoom.cpp" />
     <ClCompile Include="src\utility\Camera.cpp" />
     <ClCompile Include="src\utility\Color.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="include\scenes\InitialScene.h" />
     <ClInclude Include="include\scenes\OpenRoom.h" />
     <ClInclude Include="include\scenes\Scene.h" />
+    <ClInclude Include="include\scenes\TestScene.h" />
     <ClInclude Include="include\scenes\WhiteRoom.h" />
     <ClInclude Include="include\utility\Body.h" />
     <ClInclude Include="include\utility\Camera.h" />

@@ -2,6 +2,7 @@
 #include "../../include/utility/Uniform.h"
 #include "../../include/objects/Sphere.h"
 #include "../../include/objects/HalfSpace.h"
+#include "../../include/utility/Material.h"
 
 OpenRoom::OpenRoom() {
 	bodies.push_back(std::make_shared<Uniform>(std::make_shared<HalfSpace>(Vec3(-1.0, 0.0, 0.0), Vec3(1.0, 0.0, 0.0))));
